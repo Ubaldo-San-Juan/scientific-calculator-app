@@ -9,6 +9,16 @@
   --button-active: #d1dae6;
 }
 
+.dark-mode {
+  --bg-primary: #203240;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #212020;
+  --border-color: #333;
+  --button-bg: #f5f5f5;
+  --button-hover: #e4dada;
+  --button-active: #4a4a4a;
+}
 
 body {
   display: flex;
@@ -19,5 +29,4 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-
 }
