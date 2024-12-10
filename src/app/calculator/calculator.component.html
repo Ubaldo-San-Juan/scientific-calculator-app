@@ -1,10 +1,5 @@
 <div class="calculator">
-  <label class="toggle-switch">
-    <input type="checkbox" id="themeToggle" (click)="changeTheme(togle.checked)" #togle>
-    <span class="slider"></span>
-  </label>
   <input type="text" class="calculator-screen" [value]="display" disabled>
-
   <div class="calculator-buttons">
     <button (click)="clearInput()">C</button>
     <button (click)="delete()">DEL</button>

@@ -14,6 +14,7 @@ export class CalculatorComponent implements OnInit{
     if(saveDisplay) this.display = saveDisplay;
   }
 
+
   private saveLocalstorage(): void {
     localStorage.setItem('calculatorDisplay', this.display);
   }
@@ -36,10 +37,6 @@ export class CalculatorComponent implements OnInit{
       this.saveLocalstorage();
     }
 
-  }
-
-  changeTheme(value:any){
-    console.log(value);
   }
 
   clearInput(): void {
