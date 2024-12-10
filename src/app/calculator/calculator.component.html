@@ -1,6 +1,6 @@
 <div class="calculator">
   <label class="toggle-switch">
-    <input type="checkbox" id="themeToggle">
+    <input type="checkbox" id="themeToggle" (click)="changeTheme(togle.checked)" #togle>
     <span class="slider"></span>
   </label>
   <input type="text" class="calculator-screen" [value]="display" disabled>
@@ -24,7 +24,7 @@
     <button (click)="addValueToInput('1')">1</button>
     <button (click)="addValueToInput('2')">2</button>
     <button (click)="addValueToInput('3')">3</button>
-    <button (click)="addValueToInput('=')">=</button>
+    <button (click)="calculate()">=</button>
 
     <button (click)="addValueToInput('0')">0</button>
     <button (click)="addValueToInput('.')">.</button>
