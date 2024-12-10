@@ -28,10 +28,7 @@ export class CalculatorComponent implements OnInit{
 
     if(this.display.length < 30) {
       if(value === '.') if(this.display.includes('.')) return;
-      if(value === '*') if(this.display.includes('*')) return;
       if(value === '/') if(this.display.includes('/')) return;
-      if(value === '+') if(this.display.includes('+')) return;
-      if(value === '-') if(this.display.includes('-')) return;
       if(value === '^') if(this.display.includes('^')) return;
 
       this.display += value;
