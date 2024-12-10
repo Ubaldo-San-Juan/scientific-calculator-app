@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-primary: #f6f8f9;
+  --bg-secondary: white;
+  --text-primary: #2c3e50;
+  --text-secondary: #eef2f7;
+  --border-color: #e0e6eb;
+  --button-bg: #242628;
+  --button-hover: #1f2123;
+  --button-active: #d1dae6;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, color-mix(in srgb, var(--bg-primary) 80%, black) 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}

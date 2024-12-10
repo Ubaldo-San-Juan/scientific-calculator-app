@@ -1,40 +1,45 @@
 <div class="calculator">
-  <input type="text" class="calculator-screen" disabled>
+  <label class="toggle-switch">
+    <input type="checkbox" id="themeToggle">
+    <span class="slider"></span>
+  </label>
+  <input type="text" class="calculator-screen" [value]="display" disabled>
 
   <div class="calculator-buttons">
-    <button>C</button>
-    <button>DEL</button>
-    <button>/</button>
-    <button>X</button>
+    <button (click)="clearInput()">C</button>
+    <button (click)="delete()">DEL</button>
+    <button (click)="addValueToInput('/')">/</button>
+    <button (click)="addValueToInput('*')">X</button>
 
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>-</button>
+    <button (click)="addValueToInput('7')">7</button>
+    <button (click)="addValueToInput('8')">8</button>
+    <button (click)="addValueToInput('9')">9</button>
+    <button (click)="addValueToInput('-')">-</button>
 
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>+</button>
+    <button (click)="addValueToInput('4')">4</button>
+    <button (click)="addValueToInput('5')">5</button>
+    <button (click)="addValueToInput('6')">6</button>
+    <button (click)="addValueToInput('+')">+</button>
 
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>=</button>
+    <button (click)="addValueToInput('1')">1</button>
+    <button (click)="addValueToInput('2')">2</button>
+    <button (click)="addValueToInput('3')">3</button>
+    <button (click)="addValueToInput('=')">=</button>
 
-    <button>0</button>
-    <button>.</button>
+    <button (click)="addValueToInput('0')">0</button>
+    <button (click)="addValueToInput('.')">.</button>
 
-    <button>(</button>
-    <button>)</button>
-    <button>Sin</button>
-    <button>Cos</button>
-    <button>Tag</button>
-    <button>^</button>
-    <button>log</button>
-    <button>√</button>
-    <button>exp</button>
-    <button>i</button>
-    <button>e</button>
+    <button (click)="addValueToInput('(')">(</button>
+    <button (click)="addValueToInput(')')">)</button>
+    <button (click)="addValueToInput('sin(')">Sin</button>
+    <button (click)="addValueToInput('cos(')">Cos</button>
+    <button (click)="addValueToInput('tag(')">Tag</button>
+    <button (click)="addValueToInput('^')">^</button>
+    <button (click)="addValueToInput('log(')">log</button>
+    <button (click)="addValueToInput('ln(')">ln</button>
+    <button (click)="addValueToInput('sqrt(')">√</button>
+    <button (click)="addValueToInput('exp(')">exp</button>
+    <button (click)="addValueToInput('pi(')">π</button>
+    <button (click)="addValueToInput('e(')">e</button>
   </div>
 </div>
